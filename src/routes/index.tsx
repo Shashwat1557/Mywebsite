@@ -8,11 +8,11 @@ import {
   Mail,
 } from "lucide-react";
 import { useRef } from "react";
-import portrait from "@/assets/shashwat-portrait-light.jpg.asset.json";
-import serpentArt from "@/assets/portfolio-serpent.png.asset.json";
-import tigerArt from "@/assets/portfolio-tiger.png.asset.json";
-import profileFlame from "@/assets/profile-flame.png.asset.json";
-import profileTigerHead from "@/assets/profile-tiger-head.png.asset.json";
+const portrait = "/assets/shashwat-portrait-light.jpg";
+const serpentArt = "/assets/portfolio-serpent.png";
+const tigerArt = "/assets/portfolio-tiger.png";
+const profileFlame = "/assets/profile-flame.png";
+const profileTigerHead = "/assets/profile-tiger-head.png";
 
 const profile = {
   name: "Shashwat",
@@ -64,7 +64,7 @@ function Portfolio() {
         </header>
         <section id="home" className="title-stage" aria-labelledby="title-stage-heading">
           <div className="title-stage-art title-stage-serpent" aria-hidden="true">
-            <img src={serpentArt.url} alt="" />
+            <img src={serpentArt} alt="" />
           </div>
           <div className="title-stage-copy">
             <h1 id="title-stage-heading">
@@ -75,7 +75,7 @@ function Portfolio() {
             <p>made by shashwat</p>
           </div>
           <div className="title-stage-art title-stage-tiger" aria-hidden="true">
-            <img src={tigerArt.url} alt="" />
+            <img src={tigerArt} alt="" />
           </div>
         </section>
         <section
@@ -101,7 +101,7 @@ function Portfolio() {
         >
           <div className="profile-board">
             <div className="profile-board-photo">
-              <img src={portrait.url} alt="Shashwat" width="900" height="900" />
+              <img src={portrait} alt="Shashwat" width="900" height="900" />
             </div>
             <div className="profile-board-copy">
               <p className="profile-kicker">FULL-STACK DEVELOPER · INDIA</p>
@@ -122,16 +122,16 @@ function Portfolio() {
             </div>
           </div>
           <div className="wiggle-art wiggle-flame" aria-hidden="true">
-            <img src={profileFlame.url} alt="" />
+            <img src={profileFlame} alt="" />
           </div>
           <div className="wiggle-art wiggle-tiger-head" aria-hidden="true">
-            <img ref={artwork} src={profileTigerHead.url} alt="" />
+            <img ref={artwork} src={profileTigerHead} alt="" />
           </div>
           <div className="wiggle-art wiggle-tiger" aria-hidden="true">
-            <img src={tigerArt.url} alt="" />
+            <img src={tigerArt} alt="" />
           </div>
           <div className="wiggle-art wiggle-serpent" aria-hidden="true">
-            <img src={serpentArt.url} alt="" />
+            <img src={serpentArt} alt="" />
           </div>
           <div className="wiggle-mark wiggle-mark-one" aria-hidden="true">
             ≋
@@ -149,7 +149,7 @@ function Portfolio() {
               aria-label="Open the Work page"
             >
               <div className="work-image-wrap work-tiger-art" aria-hidden="true">
-                <img src={tigerArt.url} alt="" />
+                <img src={tigerArt} alt="" />
               </div>
               <div className="work-caption work-link-caption">
                 <h2>Work</h2>

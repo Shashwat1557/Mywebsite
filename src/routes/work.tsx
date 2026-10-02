@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Github, Globe, Mail } from "lucide-react";
-import serpentArt from "@/assets/portfolio-serpent.png.asset.json";
-import tigerArt from "@/assets/portfolio-tiger.png.asset.json";
+const serpentArt = "/assets/portfolio-serpent.png";
+const tigerArt = "/assets/portfolio-tiger.png";
 
 const projects = [
   {
@@ -10,7 +10,7 @@ const projects = [
     tagline: "Community Grievance Reporting Platform",
     description:
       "A digital grievance-reporting platform designed to help rural communities raise local civic issues and connect them with responsible authorities. Users can report problems related to roads, electricity, development, and other public services, along with descriptions and supporting images or videos. Submitted grievances can then be reviewed and managed by administrators.",
-    stack: ["React", "TypeScript", "Vite", "Supabase", "Netlify"],
+    stack: ["React", "TypeScript", "Vite", "Netlify"],
     github: "https://github.com/Shashwat1557/GramConnect",
     live: "https://gramconnectez.netlify.app/",
   },
@@ -101,10 +101,10 @@ function WorkPage() {
             to games and AI experiments.
           </p>
           <div className="wiggle-art wiggle-tiger" aria-hidden="true">
-            <img src={tigerArt.url} alt="" />
+            <img src={tigerArt} alt="" />
           </div>
           <div className="wiggle-art wiggle-serpent" aria-hidden="true">
-            <img src={serpentArt.url} alt="" />
+            <img src={serpentArt} alt="" />
           </div>
           <div className="wiggle-mark wiggle-mark-one" aria-hidden="true">
             ≋
