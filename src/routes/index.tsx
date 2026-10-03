@@ -1,12 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import {
-  ArrowDown,
-  ArrowUpRight,
-  Code2,
-  Github,
-  Linkedin,
-  Mail,
-} from "lucide-react";
+import { ArrowDown, ArrowUpRight, Code2, Github, Linkedin, Mail } from "lucide-react";
 import { useRef } from "react";
 const portrait = "/assets/shashwat-portrait-light.jpg";
 const serpentArt = "/assets/portfolio-serpent.png";
@@ -35,7 +28,19 @@ export const Route = createFileRoute("/")({
           "The portfolio of a design-minded full-stack developer building thoughtful digital products.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://mywebsite-ten-lime.vercel.app/" },
+      {
+        property: "og:image",
+        content: "https://mywebsite-ten-lime.vercel.app/og-image.png",
+      },
+      { property: "og:image:width", content: "1672" },
+      { property: "og:image:height", content: "941" },
+      { property: "og:image:alt", content: "Shashwat's developer portfolio" },
       { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:image",
+        content: "https://mywebsite-ten-lime.vercel.app/og-image.png",
+      },
     ],
   }),
   component: Portfolio,

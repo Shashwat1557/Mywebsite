@@ -73,11 +73,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Arjun Mehta — Developer Portfolio" },
+      { title: "Shashwat — Full-stack Developer" },
       { name: "description", content: "Full-stack developer portfolio and selected work." },
-      { name: "author", content: "Arjun Mehta" },
+      { name: "author", content: "Shashwat" },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://mywebsite-ten-lime.vercel.app/og-image.png" },
+      { property: "og:image:alt", content: "Shashwat's developer portfolio" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://mywebsite-ten-lime.vercel.app/og-image.png" },
     ],
     links: [
       {
@@ -86,7 +89,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap",
+      },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),

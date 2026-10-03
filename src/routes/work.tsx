@@ -62,7 +62,17 @@ export const Route = createFileRoute("/work")({
           "Selected projects by Shashwat: GramConnect, Duskwarden, EcoModel, and a PDF RAG chatbot.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:url", content: "https://mywebsite-ten-lime.vercel.app/work" },
+      {
+        property: "og:image",
+        content: "https://mywebsite-ten-lime.vercel.app/og-image.png",
+      },
+      { property: "og:image:alt", content: "Selected work by Shashwat" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:image",
+        content: "https://mywebsite-ten-lime.vercel.app/og-image.png",
+      },
     ],
   }),
   component: WorkPage,
@@ -97,8 +107,8 @@ function WorkPage() {
           <p className="profile-kicker">SELECTED WORK</p>
           <h1>Work</h1>
           <p className="projects-intro">
-            Things I've designed, built, and broken along the way — from civic platforms
-            to games and AI experiments.
+            Things I've designed, built, and broken along the way — from civic platforms to games
+            and AI experiments.
           </p>
           <div className="wiggle-art wiggle-tiger" aria-hidden="true">
             <img src={tigerArt} alt="" />
