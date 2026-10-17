@@ -197,10 +197,10 @@ function Portfolio() {
               <a href={`mailto:${profile.email}?subject=Let's build something`}>
                 <ArrowDown size={16} /> BOOK A CALL
               </a>
-              <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <a href="https://github.com/Shashwat1557" target="_blank" rel="noreferrer">
                 <Github size={16} /> GITHUB
               </a>
-              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/shashwat-s-2117a82a8/" target="_blank" rel="noreferrer">
                 <Linkedin size={16} /> LINKEDIN
               </a>
             </div>
